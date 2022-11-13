@@ -17,6 +17,7 @@ class CreateRolUsersTable extends Migration
             $table->id();
             $table->string('nombre');
             $table->boolean('estado');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

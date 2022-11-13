@@ -22,7 +22,7 @@ class CreateUsersTable extends Migration
 
             //relacion
             $table->foreignId('rol_users_id')
-                ->constrained()
+                ->constrained('rol_users')
                 ->onUpdate('cascade')
                 ->onDelete('cascade');
 
